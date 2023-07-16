@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-image:url(../assent/background.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr, ;
+}
+h1 {font-size: 2.25rem;}
+h2 {font-size: 1.875rem;}
+h3 {font-size: 1.625rem;}
+header img {
+    width:100vw;
+    height: 14.6875rem;
+}
+
+.vertical {
+    font-size: 1rem;
+}
+.curiosidades-img {
+    width: 15.625rem;
+    height: 15.8125rem;
+}
+footer {
+    width:100vw;
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.71);
+    font-size: 1rem;
+}
+.bandai {
+    width: 6rem;
+    height: 5rem;
+}
+.namco {
+width: 7.37rem;
+height: 5rem;
+}
+.sunrise {
+    width: 18.6rem;
+    height: 5rem;
+}
+.autor {
+    width: 15.12rem;
+    height: 14.40rem;
+}
+.img-facciones {
+    width: 16.93rem;
+    height: 11.44rem;
+}
