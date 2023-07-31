@@ -1,0 +1,39 @@
+.curiosidades {
+    height: 36vh;
+    width: 62.5vw;
+    background: rgba(217, 217, 217, 0.85);
+    border: 1px solid #000;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    @include flex(column,wrap,center,center);
+        div {
+            color: #000;
+            text-align: center;
+            width: 54vw;
+            height: 28.6vh;
+            overflow: hidden;
+            @include flex(column,wrap,center,center);
+            h2 {
+                margin-bottom: 2rem;
+            }
+            p{
+                width: 48vw;
+            }
+        }
+        img {
+            position: absolute;
+            width: 13vw;
+            height: 23vh;
+            z-index: 1;
+        }
+        .img-1{
+            left: -20px;
+            top: -60px;
+        }
+        .img-2{
+            right: -40px;
+            bottom: -60px;
+        }
+}
+

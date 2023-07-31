@@ -1,0 +1,61 @@
+.grid-boody{
+    background-image:url(../assent/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.grid-boody.index{
+    @include grid(100%, 13% 75% 12%, center, center,
+    "head"
+    "main"
+    "foot");
+header{
+        display: grid;
+        grid-area: head;
+    }
+main{
+        display: grid;
+        grid-area: main;
+        margin-left: 5rem;
+        width: 94vw;
+        @include flex(column, wrap,center,center);
+    }
+footer{
+        display: grid;
+        grid-area: foot;
+    }
+}
+.grid-boody.personajes{
+    @extend .grid-boody.index;
+    grid-template-rows: 9.2% 83.5% 6.5%;
+}
+.grid-boody.gundam-mobile{
+    @extend.grid-boody.index;
+    grid-template-rows: 10.5% 80% 9.5%;
+}
+.grid-boody.facciones{
+    @extend.grid-boody.index;
+    grid-template-rows: 5.8% 89.2% 5%;
+}
+@media (max-width: 1024px){
+    .grid-boody.index{
+        @include grid(100%, 13% 75% 12%, center, center,
+        "head"
+        "main"
+        "foot");
+    header{
+            display: grid;
+            grid-area: head;
+        }
+    main{
+            display: grid;
+            grid-area: main;
+            margin-left: 5rem;
+            width: 95%;
+            @include flex(column, wrap,center,center);
+        }
+    footer{
+            display: grid;
+            grid-area: foot;
+        }
+    }
+}

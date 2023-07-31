@@ -1,0 +1,55 @@
+.grid-footer {
+    background: $backgraundColor;
+    font-size: 1rem;
+    @include grid (repeat(2, 1fr),30vh,center,center, "marcas autor");
+    .footer-marcas {
+        grid-area: marcas;
+        @include grid (100%,repeat(2, 50%),center,center,
+        "imagen" 
+        "texto");
+        div {
+            grid-area: imagen;
+            margin-bottom: 1rem;
+            @include flex (row, wrap,center,center);
+            .bandai {
+                margin-right: 1rem;
+                width: 5vw;
+                height: 7.2vh;
+            }
+            .namco {
+                margin-right: 1rem;
+                width: 7.37rem;
+                height: 7.2vh;
+            }
+            .sunrise {
+                margin-right: 1rem;
+                width: 6.2vw;
+                height: 7.2vh;
+            }
+        }
+        p{
+            margin-right: .625rem;
+            grid-area: texto;
+            text-align: center;
+            color: $colorTexPrincipal;
+            size: 1.25rem;
+        }
+    }
+    .autor {
+        @include grid (repeat(2, 1fr), 30vh, center,center, "texto imagen");
+        grid-area: autor;
+        text-align: center;
+        img{
+            grid-area: imagen;
+            width: 12.6vw;
+            height: 20.60vh;
+        }
+        p {
+            margin-right: .625rem;
+            grid-area: texto;
+            text-align: center;
+            color: $colorTexPrincipal;
+            size: 1.25rem;
+        }
+    }
+}

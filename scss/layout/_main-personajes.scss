@@ -1,0 +1,96 @@
+.amuro-rey{
+    position: relative;
+    width: 55rem;
+    height: 61rem;
+    background-color: $backgraundColorSecundario;
+    @include grid(20rem 35rem,36rem 25rem,center,center,
+    "img div"
+    "p  p");
+    .ficha {
+        grid-area: div;
+        margin-top: 2rem;
+        color: $colorTexPrincipal;
+        top: 1rem;
+        @include flex(column, wrap,center,center);
+        h3 {
+            margin-bottom: 1.25rem;
+            color: $colorTexPrincipal;
+        }
+        li{
+            margin-bottom: .3125rem;
+            list-style: none;
+        }
+        .second-list {
+            margin-left: 1.25rem;
+            li{
+                list-style: circle;
+            }
+        }
+    }
+    img{
+        grid-area: img;
+        position: absolute;
+        width: 23.0625rem;
+        height: 30.875rem;
+        left: -2.5rem;
+        top: 2.5rem;
+    }
+    .historia {
+        grid-area: p;
+        color: $colorTexPrincipal;
+        width: 50rem;
+        @include flex(row, wrap,center,center);
+        p {
+            width: 40rem;
+        }
+    }
+}
+.charz-aznabel{
+    grid-area: charz;
+    position: relative;
+    width: 55rem;
+    height: 61rem;
+    margin-bottom: 5rem;
+    background-color: $backgraundColorSecundario;
+    @include grid(35rem 20rem,36rem 25rem,center,center,
+    "div img"
+    "p  p");
+    .ficha {
+        grid-area: div;
+        margin-top: 2rem;
+        color: $colorTexPrincipal;
+        top: 1rem;
+        @include flex(column, wrap,center,center);
+        h3 {
+            margin-bottom: 1.25rem;
+            color: $colorTexPrincipal;
+        }
+        li{
+            margin-bottom: .3125rem;
+            list-style: none;
+        }
+        .second-list {
+            margin-left: 1.25rem;
+            li{
+                list-style: circle;
+            }
+        }
+    }
+    img{
+        grid-area: img;
+        position: absolute;
+        width: 23.0625rem;
+        height: 30.875rem;
+        right: -2.5rem;
+        top: 2.5rem;
+    }
+    .historia {
+        grid-area: p;
+        color: $colorTexPrincipal;
+        width: 50rem;
+        @include flex(row, wrap,center,center);
+        p {
+            width: 40rem;
+        }
+    }
+}
